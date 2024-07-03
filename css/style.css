@@ -5,6 +5,7 @@
     --linear-color: linear-gradient(135deg, #33D35E,#2AB6D9);
     --body-bg: #fafafa;
     --features-bg: #F4F5F7;
+    --green-color: #30C88F;
 }
 
 /* FONTS */
@@ -88,8 +89,8 @@ img {
 /* HEADER */
 .header {
     background: var(--white-color);
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 11px;
     z-index: 99;
 }
 .header-container {
@@ -99,7 +100,9 @@ img {
 .header__logo {
     margin-right: 250px;
 }
-.header__logo-img {
+.logo {
+    width: 140px;
+    height: 20px;
     display: block;
     flex-shrink: 0;
 }
@@ -110,9 +113,8 @@ img {
     list-style: none;
     display: flex;
     align-items: center;
-    margin-left: -30px;
 }
-.nav__item {
+.nav__item:not(:last-child) {
     margin-right: 30px;
 }
 .nav__link {
@@ -259,15 +261,11 @@ img {
 .articles__heading {
     margin-bottom: 40px;
 }
-.articles__list {
-}
-.card-list {
-}
 .articles__item {
     background-color: var(--white-color);
     border-radius: 0 0 5px 5px;
 }
-.acricles__info {
+.articles__info {
     padding: 25px 24px 24px;
 }
 .articles__img {
@@ -294,4 +292,68 @@ img {
     letter-spacing: -0.2px;
     font-weight: 400;
     color: var(--light-font-color);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--dark-font-color);
+    padding: 48px 0px;
+}
+.footer-container {
+    display: flex;
+}
+.footer__logo-icons {
+    margin-right: 132px;
+}
+.footer__logo {
+    margin-bottom: 55px;
+}
+.footer__social-link {
+    display: flex;
+    list-style: none;
+    color: var(--white-color);
+    transition: color 0.2s ease;
+}
+.footer__social-link:hover{
+    color: var(--green-color)
+}
+.footer__social-item {
+    margin-right: 14px;
+}
+.footer__links {
+    display: flex;
+    margin-right: 255px;
+}
+.footer__list {
+    list-style: none;
+    width: 160px;
+}
+.footer__item {
+    margin-bottom: 8px;
+}
+.footer__link {
+    text-decoration: none;
+    color:var(--white-color);
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.23px;
+    transition: color 0.2s ease;
+}
+.footer__link:hover {
+    color: var(--green-color);
+}
+.footer__btn {
+    width: 220px;
+}
+.footer__button {
+    margin-bottom: 24px;
+    float: right;
+}
+.copy-right {
+    color: rgba(255, 255, 255,0.5);
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.23px;
 }
